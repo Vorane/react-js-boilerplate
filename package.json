@@ -1,0 +1,22 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "a basic and opininated boilerplate for a react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muneneevans/react-js-bolierplate.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "Evans Munene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muneneevans/react-js-bolierplate/issues"
+  },
+  "homepage": "https://github.com/muneneevans/react-js-bolierplate#readme"
+}
