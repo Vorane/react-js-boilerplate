@@ -15,16 +15,15 @@ node js
 
 ### Installing
 
-
 clone the repo
-.. code-block:: sh
+```
 
    git clone https://github.com/muneneevans/react-js-bolierplate.git
 
 ```
 
 install node modules
-.. code-block:: sh
+```
 
    npm install
 
@@ -55,9 +54,9 @@ react-boilerplate/
 
 
 ## Running the tests
-```
+
 run test
-.. code-block:: sh
+```
 
    npm test
 
@@ -66,11 +65,10 @@ run test
 ## Buidling the project
 
 run build
-.. code-block:: sh
+```
 
    npm start
 
-```
 ```
 
 ## Deployment
