@@ -104,10 +104,6 @@ const rootReducer = combineReducers({
      domain1Reducer, domain2Reducer
 })
 
-export default rootReducerconst rootReducer = combineReducers({
-     productReducer, sessionReducer
-})
-
 export default rootReducer
 ```
 
