@@ -11,64 +11,55 @@ These instructions will get you a copy of the project up and running on your loc
 npm,
 node js
 
-
-
 ### Installing
 
 clone the repo
 ```
-
    git clone https://github.com/muneneevans/react-js-bolierplate.git
-
 ```
 
 install node modules
 ```
-
    npm install
-
 ```
 ## Folder Structure
 
 After creation, your project should look like this:
 
 ```
-react-boilerplate/
-    dist/
-        app/    
-    node_modules/
-    src/
-        app/
-            Components/
-            Containers/
-            Services/
-            Store/
-                confitureStore.js
-                rootReducer.js
-            index.js
-        index.html
-    package.json
-    readme.md
-    webpack.config.js
+    react-boilerplate/
+        dist/
+            app/    
+        node_modules/
+        src/
+            app/
+                Components/
+                Containers/
+                Services/
+                Store/
+                    confitureStore.js
+                    rootReducer.js
+                index.js
+            index.html
+        package.json
+        readme.md
+        webpack.config.js
 ```
 
 
 ## Running the tests
 
 run test
+
 ```
-
    npm test
-
 ```
 
 ## Buidling the project
 
 run build
 ```
-
    npm start
-
 ```
 
 ## Deployment
@@ -86,7 +77,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Evans Munene** - *Initial work* - [PurpleBooth](https://github.com/muneneevans)
+* **Evans Munene** - *Initial work* - [Vorane](https://github.com/muneneevans)
 
 See also the list of [contributors](https://github.com/muneneevans/react-js-bolierplate/graphs/contributors) who participated in this project.
 
@@ -97,6 +88,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * God
-* Hat tip to anyone who's code was used
-* Inspiration
+* Vorane Development Team
 * etc
