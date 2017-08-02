@@ -9,7 +9,7 @@ var config = {
     entry: SRC_DIR + "/index.js",
     output: {
       path: DIST_DIR + "/build",
-      filename: "bundle.js",
+      filename: "main.js",
       publicPath: "/build/"
     },
     plugins:[

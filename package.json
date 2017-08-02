@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/muneneevans/react-js-bolierplate#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "react": "^15.6.1",
-    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
