@@ -1,2 +1,7 @@
 /node_modules
 /dist
+/public
+.vscode/
+.idea/
+*.log
+package-lock.json
