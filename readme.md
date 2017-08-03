@@ -4,6 +4,8 @@ This is a simple, opinionated boilerplate to help quickly setup a react-redux ap
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+Many of the boilerplate insprirations were drawn from this [article](https://hackernoon.com/redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps-1fdf7df46092) 
+
 ### Prerequisites
 * npm
 * node js
@@ -22,20 +24,23 @@ npm install
 After creation, your project should look like this:
 
 ```
-react-boilerplate/
-    dist/
-        app/    
-    node_modules/
-    src/
-        app/
-            Components/
-            Containers/
-            Services/
-            Store/
-                confitureStore.js
-                rootReducer.js
-            index.js
+react-js-boilerplate/
+    public/
+        build/
+            main.js
+            main.css
         index.html
+    node_modules/
+    src/        
+        Components/
+        Containers/
+        Services/
+        Store/
+            confitureStore.js
+            rootReducer.js
+        app.css
+        index.html
+        index.js
     package.json
     readme.md
     webpack.config.js
@@ -56,39 +61,39 @@ run build
 npm start
 ```
 
-## Adding Actions/ActionTypes/Reducer
+## Adding Actions/ActionTypes/Reducer/Selectors
 The store is split up into domains as follow
 ```
-    Store/
-        Domain1/
-            actionTypes.js
-            actions.js
-            reducer.js
-            selectors.js
-        Domain2/
-            actionTypes.js
-            actions.js
-            reducer.js
-            selectors.js
-        configureStore.js
-        rootReducer.js
+Store/
+    Domain1/
+        actionTypes.js
+        actions.js
+        reducer.js
+        selectors.js
+    Domain2/
+        actionTypes.js
+        actions.js
+        reducer.js
+        selectors.js
+    configureStore.js
+    rootReducer.js
 ```
 
 Example
 ```
-    Store/
-        Posts/
-            actionTypes.js
-            actions.js
-            reducer.js
-            selectors.js
-        Comments/
-            actionTypes.js
-            actions.js
-            reducer.js
-            selectors.js
-        configureStore.js
-        rootReducer.js
+Store/
+    Posts/
+        actionTypes.js
+        actions.js
+        reducer.js
+        selectors.js
+    Comments/
+        actionTypes.js
+        actions.js
+        reducer.js
+        selectors.js
+    configureStore.js
+    rootReducer.js
 ```
 
 ## Combining reducers
@@ -121,16 +126,18 @@ The configureStore.js is already configured to accept the root reducer as the de
 
 ## Authors
 
-* **Evans Munene** - *Initial work* - [Vorane](https://github.com/muneneevans)
+* **Evans Munene** - [Vorane](https://github.com/muneneevans)
+* **Brian Savatia** - [Vorane](https://github.com/savatia)
+
 
 See also the list of [contributors](https://github.com/muneneevans/react-js-bolierplate/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License 
 
 ## Acknowledgments
 
 * God
 * [Vorane Development Team](http://www.vorane.com)
-* etc
+
