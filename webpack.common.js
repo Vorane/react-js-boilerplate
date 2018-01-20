@@ -2,18 +2,13 @@ var webpack = require("webpack")
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
+
 var path = require("path")
 
 var DIST_DIR = path.resolve(__dirname, "public")
 var SRC_DIR = path.resolve(__dirname, "src")
 
-var config = {
-	devtool: "inline-cheap-module-source-map",
-	devServer: {
-		contentBase: "./src",
-		inline: true,
-		historyApiFallback: true,
-	},
+var config = {	
 	entry: {
 		vendor: ["react", "react-dom", "redux", "react-redux", "react-router"],
 		app: SRC_DIR + "/index.js"
@@ -55,15 +50,15 @@ var config = {
 			}
 		]
 	},
-	plugins: [
+	plugins: [		
 		new CleanWebpackPlugin(["build"]),
 		new HtmlWebpackPlugin({
-			title: "Output Management"
+			title: "React Js Boilerplate"
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "vendor",
 			minChunks: Infinity
-		})
+		}),
 	]
 }
 
