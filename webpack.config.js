@@ -53,8 +53,7 @@ var config = {
 			title: "Output Management"
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
-			name: "vendor", // Specify the common bundle's name.
-			// filename: "vendor.js",
+			name: "vendor",			
 			minChunks: Infinity
 		})
 	]

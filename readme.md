@@ -27,6 +27,11 @@ install node modules
 npm install
 ```
 
+## Tools
+The recommended editor for this is VS CODE with these extensions
+* [ES-Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
 ## Folder Structure
 
 After creation, your project should look like this:
