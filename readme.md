@@ -31,6 +31,7 @@ npm install
 The recommended editor for this is VS CODE with these extensions
 * [ES-Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Chrome debugger](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 ## Folder Structure
 

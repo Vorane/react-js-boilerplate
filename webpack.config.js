@@ -7,6 +7,7 @@ var DIST_DIR = path.resolve(__dirname, "public")
 var SRC_DIR = path.resolve(__dirname, "src")
 
 var config = {
+	devtool: "inline-cheap-module-source-map",
 	entry: {
 		vendor: ["react", "react-dom", "redux", "react-redux"],
 		app: SRC_DIR + "/index.js"
@@ -53,7 +54,7 @@ var config = {
 			title: "Output Management"
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
-			name: "vendor",			
+			name: "vendor",
 			minChunks: Infinity
 		})
 	]
