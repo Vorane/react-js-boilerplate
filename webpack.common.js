@@ -10,7 +10,7 @@ var SRC_DIR = path.resolve(__dirname, "src")
 
 var config = {
 	entry: {
-		vendor: ["react", "react-dom", "redux", "react-redux", "react-router"],
+		vendor: ["react", "react-dom", "redux", "react-redux", "react-router","redux-thunk"],
 		app: SRC_DIR + "/index.js"
 	},
 	output: {
