@@ -8,7 +8,7 @@ var path = require("path")
 var DIST_DIR = path.resolve(__dirname, "public")
 var SRC_DIR = path.resolve(__dirname, "src")
 
-var config = {	
+var config = {
 	entry: {
 		vendor: ["react", "react-dom", "redux", "react-redux", "react-router"],
 		app: SRC_DIR + "/index.js"
@@ -16,6 +16,7 @@ var config = {
 	output: {
 		path: DIST_DIR + "/build",
 		filename: "[name].js",
+		chunkFilename: "[name].js",
 		publicPath: "/build/"
 	},
 	module: {
@@ -50,7 +51,7 @@ var config = {
 			}
 		]
 	},
-	plugins: [		
+	plugins: [
 		new CleanWebpackPlugin(["build"]),
 		new HtmlWebpackPlugin({
 			title: "React Js Boilerplate"
@@ -58,7 +59,7 @@ var config = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "vendor",
 			minChunks: Infinity
-		}),
+		})
 	]
 }
 
