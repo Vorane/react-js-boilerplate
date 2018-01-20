@@ -14,9 +14,9 @@ var config = {
 	},
 	plugins: [new ExtractTextPlugin("[name].css")],
 	module: {
-		loaders: [
+		rules: [
 			{
-				test: /\.js?/,
+				test: /\.(js|jsx)$/,
 				include: SRC_DIR,
 				loader: "babel-loader",
 				query: {
@@ -25,14 +25,23 @@ var config = {
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg|eot|svg|ttf|woff|woff2)$/,
-				loader: "file-loader"
+				use: "file-loader"
 			},
 			{
 				test: /\.css$/,
-				loader: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: "css-loader"
-				})
+				use: [
+					{ loader: "style-loader" },
+					{
+						loader: "css-loader",
+						options: {
+							modules: true
+						}
+					}
+				]
+			},
+			{
+				test: /\.json$/,
+				use: "json-loader"
 			}
 		]
 	}
