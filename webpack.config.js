@@ -1,6 +1,7 @@
 var webpack = require("webpack")
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const CleanWebpackPlugin = require("clean-webpack-plugin")
 var path = require("path")
 
 var DIST_DIR = path.resolve(__dirname, "public")
@@ -50,6 +51,7 @@ var config = {
 		]
 	},
 	plugins: [
+		new CleanWebpackPlugin(["build"]),
 		new HtmlWebpackPlugin({
 			title: "Output Management"
 		}),
