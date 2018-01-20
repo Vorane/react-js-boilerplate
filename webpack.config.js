@@ -9,8 +9,13 @@ var SRC_DIR = path.resolve(__dirname, "src")
 
 var config = {
 	devtool: "inline-cheap-module-source-map",
+	devServer: {
+		contentBase: "./src",
+		inline: true,
+		historyApiFallback: true,
+	},
 	entry: {
-		vendor: ["react", "react-dom", "redux", "react-redux","react-router"],
+		vendor: ["react", "react-dom", "redux", "react-redux", "react-router"],
 		app: SRC_DIR + "/index.js"
 	},
 	output: {
