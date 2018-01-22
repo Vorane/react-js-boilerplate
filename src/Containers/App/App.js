@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 
 
-import styles from "../app.css"
+import styles from "../../app.css"
 //import screens here
 
 export default class App extends Component {
