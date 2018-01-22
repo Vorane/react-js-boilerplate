@@ -2,6 +2,7 @@ const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 	.BundleAnalyzerPlugin
+var DashboardPlugin = require("webpack-dashboard/plugin")
 
 module.exports = merge(common, {
 	devtool: "inline-cheap-module-source-map",
@@ -10,5 +11,5 @@ module.exports = merge(common, {
 		inline: true,
 		historyApiFallback: true
 	},
-	plugins: [new BundleAnalyzerPlugin()]
+	plugins: [new BundleAnalyzerPlugin(), new DashboardPlugin()]
 })
