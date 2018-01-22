@@ -33,10 +33,8 @@ var config = {
 			{
 				test: /\.(js|jsx)$/,
 				include: SRC_DIR,
-				loader: "babel-loader",
-				query: {
-					presets: ["react", "es2015", "stage-2"]
-				}
+				loader: "babel-loader",				
+				
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg|eot|svg|ttf|woff|woff2)$/,
@@ -59,7 +57,7 @@ var config = {
 			template: SRC_DIR + "/index.html",
 			title: "React Js Boilerplate",
 			inject: true
-		}),		
+		}),
 		new WebpackPwaManifest({
 			name: "react js boilerplate",
 			short_name: "rjb",
