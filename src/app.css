@@ -22,8 +22,12 @@ div {
 }
 .header {
     font-family: SharpSans;
-    background-color: #f1592a;    
+    background-color: #EFEB40;    
 }
 img{
   max-width: 100%;
+}
+
+body{
+  margin:0;
 }
