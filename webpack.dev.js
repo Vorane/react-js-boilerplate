@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 module.exports = merge(common, {
 	devtool: "inline-cheap-module-source-map",
 	devServer: {
-		contentBase: "./public",
+		contentBase: "./src",
 		inline: true,
 		historyApiFallback: true
 	},

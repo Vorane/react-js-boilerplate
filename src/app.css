@@ -20,3 +20,6 @@ div {
     font-family: SharpSans;
   /* background-color: #f1592a; */
 }
+img{
+  max-width: 100%;
+}
