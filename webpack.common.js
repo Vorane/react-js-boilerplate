@@ -1,6 +1,6 @@
 var webpack = require("webpack")
 var ManifestPlugin = require("webpack-manifest-plugin")
-var ExtractTextPlugin = require("extract-text-webpack-plugin")
+
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
 const WebpackPwaManifest = require("webpack-pwa-manifest")
@@ -47,18 +47,6 @@ var config = {
 				use: "file-loader"
 			},
 			{
-				test: /\.css$/,
-				use: [
-					{ loader: "style-loader" },
-					{
-						loader: "css-loader",
-						options: {
-							modules: true
-						}
-					}
-				]
-			},
-			{
 				test: /\.json$/,
 				use: "json-loader"
 			}
@@ -71,7 +59,7 @@ var config = {
 			template: SRC_DIR + "/index.html",
 			title: "React Js Boilerplate",
 			inject: true
-		}),
+		}),		
 		new WebpackPwaManifest({
 			name: "react js boilerplate",
 			short_name: "rjb",

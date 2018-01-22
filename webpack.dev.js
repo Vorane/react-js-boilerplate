@@ -11,5 +11,21 @@ module.exports = merge(common, {
 		inline: true,
 		historyApiFallback: true
 	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: [
+					{ loader: "style-loader" },
+					{
+						loader: "css-loader",
+						options: {
+							modules: true
+						}
+					}
+				]
+			}
+		]
+	},
 	plugins: [new BundleAnalyzerPlugin(), new DashboardPlugin()]
 })
