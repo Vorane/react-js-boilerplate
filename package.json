@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/muneneevans/react-js-bolierplate#readme",
   "dependencies": {
-    "browser-sync-webpack-plugin": "^1.2.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.17.0",
     "react": "^15.6.1",
@@ -38,6 +37,7 @@
     "seamless-immutable": "^7.1.2"
   },
   "devDependencies": {
+    "browser-sync-webpack-plugin": "^1.2.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
