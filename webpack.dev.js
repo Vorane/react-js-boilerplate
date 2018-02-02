@@ -37,7 +37,8 @@ module.exports = merge(common, {
 				// ./public directory is being served
 				host: "localhost",
 				port: 3000,
-				server: { baseDir: ["public"] }
+				proxy: "http://localhost:8080/"
+				// server: { baseDir: ["public"] }
 			},
 			{
 				// prevent BrowserSync from reloading the page
