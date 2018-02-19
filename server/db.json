@@ -1,0 +1,8 @@
+{
+	"posts": [{ "id": 1, "title": "mock post", "author": "vorane" }],
+	"comments": [
+		{ "id": 1, "body": "mock comment", "postId": 1 },
+		{ "id": 2, "body": "mock comment", "postId": 1 }
+	],
+	"profile": { "name": "vorane" }
+}
