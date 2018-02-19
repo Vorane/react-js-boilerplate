@@ -1,18 +1,18 @@
 @font-face {
   font-family: "SharpSans";
-  src: url("./fonts/SharpSans-Medium.woff2") format("woff2");
+  src: url("./assets/fonts/SharpSans-Medium.woff2") format("woff2");
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
   font-family: "SharpSans-Semibold";
-  src: url("./fonts/SharpSans-Semibold.woff2") format("woff2");
+  src: url("./assets/fonts/SharpSans-Semibold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SharpSans-Bold";
-  src: url("./fonts/SharpSans-Bold.woff2") format("woff2");
+  src: url("./assets/fonts/SharpSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
