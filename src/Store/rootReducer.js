@@ -1,9 +1,9 @@
 import { combineReducers } from "redux"
 
 //import reducers from domains
-
+import shared from "./Shared/reducers"
 const rootReducer = combineReducers({
-	//add the reducers here
+	shared: shared
 })
 
 export default rootReducer

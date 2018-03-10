@@ -1,0 +1,1 @@
+export const SAMPLE_ACTION_TYPE = "shared.SAMPLE_ACTION_TYPE"
