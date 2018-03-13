@@ -7,7 +7,11 @@ const initialState = Immutable({})
 export const firstSharedReducer = (state = initialState, action = {}) => {
 	switch (action.type) {
 	case types.SAMPLE_ACTION_TYPE:
-		return state
+		return {
+			...state,
+			items:[action.name]
+		}
+		
 	default:
 		return state
 	}
