@@ -1,12 +1,7 @@
-import React from "react"
-import { shallow } from "enzyme"
-import App from "../App"
+describe("dummy tests", ()=>{
 
-jest.dontMock("../App")
-
-test("App component should render as expected", () => {
-	const component = shallow(<App />)
-		.is(".foo")
-		.toBe(true)
-	console.log(component)
+	it("sum test", ()=>{
+		let sum = 1 + 3
+		expect(sum).toEqual(4)
+	})
 })
