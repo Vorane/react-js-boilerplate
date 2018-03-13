@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import styles from "../../app.css"
+// import styles from "../../app.css"
 //import screens here
 import Counter from "../../Components/Counter"
 
