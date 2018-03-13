@@ -1,9 +1,9 @@
+/* global  it, describe, expect */
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "../Containers/App"
 
 import { Provider } from "react-redux"
-
 
 import store from "../Store/configureStore"
 

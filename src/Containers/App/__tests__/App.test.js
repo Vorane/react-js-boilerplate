@@ -1,7 +1,10 @@
-describe("dummy tests", ()=>{
+/* global  it, describe, expect */
+import React from "react"
+import { mount } from "enzyme"
+import App from "../../App"
 
-	it("sum test", ()=>{
-		let sum = 1 + 3
-		expect(sum).toEqual(4)
+describe("App  tests", () => {
+	it("test if the App will mount ", () => {
+		mount(<App />)
 	})
 })

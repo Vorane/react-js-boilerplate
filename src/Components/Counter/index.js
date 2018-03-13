@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-
 import styles from "../../app.css"
-//import screens here
+
 
 class Counter extends Component {
 	constructor() {

@@ -4,13 +4,14 @@
 	"description": "a basic and opininated boilerplate for a react app",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm run build",
+		"start": "webpack-dev-server --open --config webpack.dev.js",
 		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:cover": "npm run test -- --coverage ",
 		"watch": "webpack --watch",
-		"build": "webpack-dev-server --open --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js ",
 		"dashboard":
 			"webpack-dashboard -- webpack-dev-server --open --config webpack.dev.js",
-		"build:prod": "webpack --config webpack.prod.js ",
 		"server": "json-server --watch server/db.json --port 3004"
 	},
 	"repository": {
@@ -54,7 +55,7 @@
 		"clean-webpack-plugin": "^0.1.17",
 		"css-loader": "^0.28.4",
 		"enzyme": "^3.3.0",
-		"enzyme-adapter-react-15": "^1.0.5",		
+		"enzyme-adapter-react-15": "^1.0.5",
 		"eslint": "^3.19.0",
 		"eslint-plugin-react": "^7.5.1",
 		"extract-text-webpack-plugin": "^3.0.0",
