@@ -12,7 +12,8 @@
 		"build": "webpack --config webpack.prod.js ",
 		"dashboard":
 			"webpack-dashboard -- webpack-dev-server --open --config webpack.dev.js",
-		"server": "json-server --watch server/db.json --port 3004"
+		"server": "json-server --watch server/db.json --port 3004",
+		"lint":"eslint ./src"
 	},
 	"repository": {
 		"type": "git",
