@@ -1,4 +1,4 @@
-/* global  it, describe, expect */
+/* global  it, describe */
 import React from "react"
 import { mount } from "enzyme"
 import App from "../../App"

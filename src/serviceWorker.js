@@ -7,10 +7,10 @@ let cacheFiles = [
 ]
 
 self.addEventListener("install", event => {
-	console.log("service worker installed")
+	// console.log("service worker installed")
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
-			console.log("service worker caching")
+			// console.log("service worker caching")
 			return cache.addAll(cacheFiles)
 		})
 	)
@@ -21,7 +21,7 @@ self.addEventListener("activate", event => {
 			return Promise.all(
 				cacheNames.map(thisCacheName => {
 					if (thisCacheName !== cacheName) {
-						console.log("removing chached files")
+						// console.log("removing chached files")
 						return caches.delete(thisCacheName)
 					}
 				})
@@ -30,12 +30,12 @@ self.addEventListener("activate", event => {
 	)
 })
 self.addEventListener("fetch", event => {
-	console.log("SW fetch", event.request.url)
+	// console.log("SW fetch", event.request.url)
 
 	event.respondWith(
 		caches.match(event.request).then(response => {
 			if (response) {
-				console.log(response)
+				// console.log(response)
 				return response
 			}
 
