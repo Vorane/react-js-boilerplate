@@ -1,5 +1,8 @@
 # React Boilerplate
 
+[![Build Status](https://travis-ci.org/muneneevans/react-js-bolierplate.png?branch=master)](https://travis-ci.org/muneneevans/react-js-bolierplate)
+
+
 This is a simple, opinionated boilerplate to help quickly setup a react-redux appliaction
 
 ## Getting Started
