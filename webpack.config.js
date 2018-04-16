@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require("path");
 
 var DIST_DIR = path.resolve(__dirname,"public");
@@ -8,7 +9,7 @@ var SRC_DIR = path.resolve(__dirname, "src");
 var config = {
     entry: SRC_DIR + "/index.js",
     output: {
-      path: DIST_DIR + "/build",
+      path: path.join(DIST_DIR, "build"),
       filename: "main.js",
       publicPath: "/build/"
     },
@@ -17,8 +18,15 @@ var config = {
         src: SRC_DIR
       }
     },
+    devServer: {
+      publicPath: "/build/"
+    },
     plugins:[
-      new ExtractTextPlugin('[name].css')
+      new ExtractTextPlugin('[name].css'),
+      new HtmlWebpackPlugin({
+        filename: '../index.html',
+        template: 'src/index.html',
+      }),
     ],
     module: {
       loaders: [
