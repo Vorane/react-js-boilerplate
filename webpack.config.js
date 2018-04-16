@@ -12,6 +12,11 @@ var config = {
       filename: "main.js",
       publicPath: "/build/"
     },
+    resolve: {
+      alias: {
+        src: SRC_DIR
+      }
+    },
     plugins:[
       new ExtractTextPlugin('[name].css')
     ],
