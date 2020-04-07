@@ -12,15 +12,15 @@ render(
 	document.getElementById("app")
 )
 
-if ("serviceWorker" in navigator) {
-	window.addEventListener("load", function() {
-		navigator.serviceWorker
-			.register("./serviceWorker.js", { scope: "/" })
-			.then(() => {
-				// console.log(registration)
-			})
-			.catch(error => {
-				throw error
-			})
-	})
-}
+// if ("serviceWorker" in navigator) {
+// 	window.addEventListener("load", function() {
+// 		navigator.serviceWorker
+// 			.register("./serviceWorker.js", { scope: "/" })
+// 			.then(() => {
+// 				// console.log(registration)
+// 			})
+// 			.catch(error => {
+// 				throw error
+// 			})
+// 	})
+// }
